@@ -9,7 +9,6 @@ services:
     volumes:
       - "./data:/data/db"
 
-
   mmi-client:
     image: navdeep710/ondc-ancillary-services:v3
     container_name: map-client
@@ -143,7 +142,9 @@ services:
       MONGO_DATABASE_HOST: ${MONGO_DATABASE_HOST}
       BAP_URL: ${BAP_URL}
       CLIENT_WEBHOOK_ENDPOINT: ${CLIENT_WEBHOOK_ENDPOINT}
+      REGISTRY_BASE_URL: ${REGISTRY_BASE_URL}
       BAP_PRIVATE_KEY: ${BAP_PRIVATE_KEY}
+      VERIFICATION_ENABLE: ${VERIFICATION_ENABLE}
     ports:
       - 5555:5555
     expose:

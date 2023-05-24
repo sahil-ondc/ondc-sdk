@@ -134,7 +134,10 @@ services:
     restart: always
 
   py-ondc-protocol:
-    image: navdeep710/ondc-protocol-layer-server:pr-sse-v7.8
+    # image: navdeep710/ondc-protocol-layer-server:pr-sse-v7.8
+    build:
+      context: py-ondc-protocol/webserver
+      dockerfile: Dockerfile
     container_name: py-ondc-protocol
     environment:
       ENV: ${PROTOCOL_ENV}
@@ -144,9 +147,7 @@ services:
       REGISTRY_BASE_URL: ${REGISTRY_BASE_URL}
       BAP_PRIVATE_KEY: ${BAP_PRIVATE_KEY}
       VERIFICATION_ENABLE: ${VERIFICATION_ENABLE}
-      BAP_UNIQUE_KEY_ID: ${BAP_UNIQUE_KEY_ID}
-      BAP_PUBLIC_KEY: ${BAP_PUBLIC_KEY}
-      BAP_ID: ${BAP_ID}
+
     ports:
       - 5555:5555
     expose:

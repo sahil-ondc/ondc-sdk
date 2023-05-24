@@ -9,7 +9,6 @@ services:
     volumes:
       - './data:/data/db'
 
-
   mmi-client:
     image: navdeep710/ondc-ancillary-services:v3
     container_name: map-client
@@ -60,7 +59,6 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
 
-
   certbot:
     image: certbot/certbot
     restart: "always"
@@ -107,7 +105,7 @@ services:
 
   py-ondc-protocol:
     build:
-      context: biab-bap-protocol
+      context: py-ondc-protocol
     container_name: py-ondc-protocol
     environment:
       ENV: ${PROTOCOL_ENV}

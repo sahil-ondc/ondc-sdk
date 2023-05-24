@@ -1,0 +1,26 @@
+{
+  "product": "Bingo",
+  "summary": "jkhjwkhdjkwhkjwhjkdhw",
+  "alias": "16882fba-c89f-4c03-97e6-031ea89b0b39",
+  "bpp_id": "ondc-staging.eunimart.com/api/v1/ondc/bpp/eunimart_bpp",
+  "bpp_name": "Siva store",
+  "attachments": [],
+  "action": {
+    "complainant_actions": [
+      {
+        "complainant_action": "OPEN",
+        "short_desc": "Complaint created",
+        "updated_at": "2023-05-22T15:32:08.558Z",
+        "updated_by": {
+          "org": { "name": "buyer-ref-app-stage.ondc.org::nic2004:52110" },
+          "contact": {
+            "phone": "6239083807",
+            "email": "Rishabhnand.singh@ondc.org"
+          },
+          "person": { "name": "Rishabhnand Singh" }
+        }
+      }
+    ],
+    "respondent_actions": []
+  }
+}

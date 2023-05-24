@@ -19,7 +19,7 @@
   tasks:
     - name: Clone biap-client-node-js
       git:
-        repo: "https://github.com/ONDC-Official/biap-client-node-js.git"
+        repo: "https://github.com/sharmasahil0331/biap-client-node-js.git"
         dest: "/home/ubuntu/biap-client-node-js"
         version: "master"
 
@@ -28,6 +28,7 @@
         repo: "https://github.com/ONDC-Official/biap-app-ui-front.git"
         dest: "/home/ubuntu/biap-app-ui-front"
         version: "master"
+        force: true
 
     - name: Clone biap-igm-node-js
       git:
@@ -37,13 +38,13 @@
 
     - name: Clone py ondc protocol
       git:
-        repo: "https://github.com/ONDC-Official/py-protocol-layer.git"
+        repo: "https://github.com/sharmasahil0331/py-protocol-layer.git"
         dest: "/home/ubuntu/py-ondc-protocol"
         version: "master"
 
     - name: Clone biap-bugzilla-service
       git:
-        repo: "https://github.com/ONDC-Official/biap-bugzilla-service"
+        repo: "https://github.com/robin-chauhan1/biap-bugzilla-service.git"
         dest: "/home/ubuntu/biap-bugzilla-service"
         version: "main"
 
